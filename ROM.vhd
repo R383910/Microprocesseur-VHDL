@@ -11,7 +11,7 @@ ENTITY rom IS
 END ENTITY;
 
 ARCHITECTURE archi OF rom IS
-	TYPE rom_type IS ARRAY (0 TO 255) OF STD_LOGIC_VECTOR(15 DOWNTO 0);
+	TYPE rom_type IS ARRAY (0 TO 4095) OF STD_LOGIC_VECTOR(15 DOWNTO 0);
 	
 	SIGNAL rom_block : rom_type := (others => (others => '0'));
 	

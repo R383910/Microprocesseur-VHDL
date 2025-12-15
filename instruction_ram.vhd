@@ -13,7 +13,7 @@ ENTITY instruction_ram IS
 END ENTITY;
 
 ARCHITECTURE archi OF instruction_ram IS
-	TYPE instruction_ram_type IS ARRAY (0 TO 255) OF STD_LOGIC_VECTOR(15 DOWNTO 0);
+	TYPE instruction_ram_type IS ARRAY (0 TO 4095) OF STD_LOGIC_VECTOR(15 DOWNTO 0);
 
 	SIGNAL instruction_ram_block : instruction_ram_type;
 
